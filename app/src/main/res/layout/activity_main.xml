@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#86B0C3"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/blue_button"
+        android:onClick="GetTemperature"
+        android:text="Check Weather"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Weather"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <EditText
+        android:id="@+id/city_Name"
+        android:layout_width="138dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="Enter City"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Weather_Main" />
+
+    <TextView
+        android:id="@+id/tv_City"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="128dp"
+        android:text="Enter_Your_City"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/city_Name"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Weather_Main" />
+
+    <TextView
+        android:id="@+id/tv_Weather_Main"
+        android:layout_width="216dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="92dp"
+        android:text="CHECK WEATHER STATUS"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Weather"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="128dp"
+        android:text="GetTemperature"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_City" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
